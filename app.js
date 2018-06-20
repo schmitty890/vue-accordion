@@ -50,13 +50,16 @@ const media = [
     }
   ];
 
-new Vue({
+const app = new Vue({
   el: '#media-list',
   data: {
     title: 'Jasons public library',
-    meiaList: media
+    mediaList: media
   },
   methods: {
-
+    toggleDetails: function(media){
+      console.log(media);
+      media.showDetail = !media.showDetail
+    }
   }
 });
