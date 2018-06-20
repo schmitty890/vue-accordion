@@ -9,8 +9,25 @@
   <title>Hello Vue!</title>
 </head>
 <body>
+  <div class="container">
+    <div id="media-list">
+      <h1>{{ title }}</h1>
+      <select>
+        <option>Select a type of media...</option>
+      </select>
+       <ul>
+        <li>
+          <h3>Media Title</h3> 
+          <div>
+            <p>Media Description</p>
+            <p class="byline">By: Media Contributor</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
    
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
