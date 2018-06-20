@@ -60,6 +60,10 @@ const app = new Vue({
     toggleDetails: function(media){
       console.log(media);
       media.showDetail = !media.showDetail
+    },
+    filterList: function(){
+      this.type = event.target.value;
+      console.log(this.type);
     }
   }
 });
