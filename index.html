@@ -16,7 +16,7 @@
         <option>Select a type of media...</option>
         <option v-for="item in mediaList">{{ item.type }}</option>
       </select>
-       <ul>
+      <ul>
         <li v-show="type === media.type" 
             v-for="media in mediaList" 
             v-on:click="toggleDetails(media)">

@@ -44,7 +44,7 @@ const media = [
     {
       title: 'Fortnite', 
       description: "100 people on an island, fight to the death",
-      type: 'games',
+      type: 'Games',
       contributor: 'Epic Games',
       showDetail: false,
     }
@@ -54,7 +54,8 @@ const app = new Vue({
   el: '#media-list',
   data: {
     title: 'Jasons public library',
-    mediaList: media
+    mediaList: media,
+    type: ''
   },
   methods: {
     toggleDetails: function(media){
